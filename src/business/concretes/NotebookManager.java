@@ -94,7 +94,7 @@ public class NotebookManager implements ProductService {
         if (notebookList.contains(notebook)) {
 
             System.out.println("\t\t" + "+" + "-".repeat(95) + "+");
-            System.out.printf("\t\t|\t%-3s | %-20s | %-20s | %-15s | %-11s | %-7s |\n", "ID", "Notebook Type", "Sheet", "Sheet", "Price", "Stock");
+            System.out.printf("\t\t|\t%-3s | %-20s | %-20s | %-15s | %-11s | %-7s |\n", "ID", "Notebook Type", "Brand", "Sheet", "Price", "Stock");
             System.out.println("\t\t" + "+" + "-".repeat(95) + "+");
             Notebook found = notebookList.get(notebookList.indexOf(notebook));
             System.out.printf("\t\t|\t%-3s | %-20s | %-20s | %-15s | %-11s | %-7s |\n",
@@ -154,7 +154,7 @@ public class NotebookManager implements ProductService {
     @Override
     public void filterProduct(String filter) {
         System.out.println("\t\t" + "+" + "-".repeat(95) + "+");
-        System.out.printf("\t\t|\t%-3s | %-20s | %-20s | %-15s | %-11s | %-7s |\n", "ID", "Notebook Type", "Sheet", "Sheet", "Price", "Stock");
+        System.out.printf("\t\t|\t%-3s | %-20s | %-20s | %-15s | %-11s | %-7s |\n", "ID", "Notebook Type", "Brand", "Sheet", "Price", "Stock");
         System.out.println("\t\t" + "+" + "-".repeat(95) + "+");
         for (Notebook notebook : this.notebookList) {
             if (notebook.getBrand().equalsIgnoreCase(filter)) {
