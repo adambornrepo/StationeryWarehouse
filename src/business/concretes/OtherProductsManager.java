@@ -29,7 +29,7 @@ public class OtherProductsManager implements ProductService {
             System.out.println("\t\t" + "|\t" + "< 2 > Add Product" + " ".repeat(12) + "|");
             System.out.println("\t\t" + "|\t" + "< 3 > Delete Product" + " ".repeat(9) + "|");
             System.out.println("\t\t" + "|\t" + "< 4 > Filter by 'Type'  " + " ".repeat(5) + "|");
-            System.out.println("\t\t" + "|\t" + "< 0 > Exit" + " ".repeat(19) + "|");
+            System.out.println("\t\t" + "|\t" + "< 0 > Save & Exit" + " ".repeat(12) + "|");
             System.out.println("\t\t" + "+" + "-".repeat(32) + "+");
 
             System.out.print("\t\tSelect : ");

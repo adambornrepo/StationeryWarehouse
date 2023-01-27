@@ -29,7 +29,7 @@ public class NotebookManager implements ProductService {
             System.out.println("\t\t" + "|\t" + "< 2 > Add Notebook" + " ".repeat(11) + "|");
             System.out.println("\t\t" + "|\t" + "< 3 > Delete Notebook" + " ".repeat(8) + "|");
             System.out.println("\t\t" + "|\t" + "< 4 > Filter by 'Brand'" + " ".repeat(6) + "|");
-            System.out.println("\t\t" + "|\t" + "< 0 > Exit" + " ".repeat(19) + "|");
+            System.out.println("\t\t" + "|\t" + "< 0 > Save & Exit" + " ".repeat(12) + "|");
             System.out.println("\t\t" + "+" + "-".repeat(32) + "+");
 
             System.out.print("\t\tSelect : ");

@@ -27,7 +27,7 @@ public class BookManager implements ProductService {
             System.out.println("\t\t" + "|\t" + "< 2 > Add Book" + " ".repeat(15) + "|");
             System.out.println("\t\t" + "|\t" + "< 3 > Delete Book" + " ".repeat(12) + "|");
             System.out.println("\t\t" + "|\t" + "< 4 > Filter by 'Publisher'  " + "|");
-            System.out.println("\t\t" + "|\t" + "< 0 > Exit" + " ".repeat(19) + "|");
+            System.out.println("\t\t" + "|\t" + "< 0 > Save & Exit" + " ".repeat(12) + "|");
             System.out.println("\t\t" + "+" + "-".repeat(32) + "+");
 
             System.out.print("\t\tSelect : ");
