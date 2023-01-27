@@ -3,7 +3,6 @@ package dataaccess.concretes;
 import dataaccess.abstracts.DataOperations;
 import dataaccess.abstracts.Gateway;
 import entities.concretes.OtherProduct;
-
 import java.io.*;
 import java.util.List;
 
@@ -17,7 +16,7 @@ public class OtherProductsDataAccess extends Gateway implements DataOperations {
     @Override
     public void read() {
         try {
-            File file = new File(path + "OtherProductData");
+            File file = new File(path + "\\OtherProductData");
             FileReader fr = new FileReader(file);
             BufferedReader br = new BufferedReader(fr);
             String products = null;
@@ -34,7 +33,7 @@ public class OtherProductsDataAccess extends Gateway implements DataOperations {
     @Override
     public void write() {
         try {
-            File file = new File(path + "OtherProductData");
+            File file = new File(path + "\\OtherProductData");
             FileWriter fr = new FileWriter(file);
             BufferedWriter br = new BufferedWriter(fr);
             for (OtherProduct product : otherProductsList) {

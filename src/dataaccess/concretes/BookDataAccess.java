@@ -3,7 +3,6 @@ package dataaccess.concretes;
 import dataaccess.abstracts.DataOperations;
 import dataaccess.abstracts.Gateway;
 import entities.concretes.Book;
-
 import java.io.*;
 import java.util.List;
 
@@ -17,7 +16,7 @@ public class BookDataAccess extends Gateway implements DataOperations {
     @Override
     public void read() {
         try {
-            File file = new File(path + "BookData");
+            File file = new File(path + "\\BookData");
             FileReader fr = new FileReader(file);
             BufferedReader br = new BufferedReader(fr);
             String books = null;
@@ -34,7 +33,7 @@ public class BookDataAccess extends Gateway implements DataOperations {
     @Override
     public void write() {
         try {
-            File file = new File(path + "BookData");
+            File file = new File(path + "\\BookData");
             FileWriter fr = new FileWriter(file);
             BufferedWriter br = new BufferedWriter(fr);
             for (Book book : bookList) {
